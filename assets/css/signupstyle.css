@@ -1,0 +1,137 @@
+body{
+    background-image: url("../images/back5.jpeg");
+    padding: 25px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+.steam-signup-form{
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 35% 1fr 3em;
+}
+label{
+  margin: 20px;
+  color: white;
+  display: flex;
+}
+input[type=text] ,input[type=email], input[type=date], input[type=password] {
+  all: unset;
+  display: block;
+  background: #1a37ad;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+h2{
+    text-align: center;
+    color: #4f2116;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+h1{
+    margin: 20px;
+    color: #813725;
+    font-size: 50px;
+
+}
+p{
+    margin: 20px;
+    color: #ffffff;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: black;
+}
+.button{
+    all: unset;
+    margin: 20px;
+    cursor: pointer;
+    display: inline-block;
+    background: #48c42c;
+    color: #505050;
+    font-weight: bold;
+    transform: scale(100%);
+    transition: ease-in-out 150ms;
+}
+.button:hover{
+    transform: scale(110%);
+}
+.form__tooltip{
+    font-size: 12px;
+    background: #182ec0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    align-self: center;
+    margin-left: 8px;
+    position: relative;
+}
+.form__tooltip::after{
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+    padding: 16px;
+    background: #1a37ad;
+    bottom: 20px;
+    text-align: left;
+    width: 250px;
+}
+.form__tooltip:hover::after{
+    display: block;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+.select__file{
+    margin: 20px;
+    color: #9a0b0b;
+}
+.form__checkbox{
+
+}
+.form__file{
+    font-size: 12px;
+    background: #182ec0;
+    display: inline-block;
+}
+.form__file:hover{
+    transform: scale(90%);
+}
+.list--unstyled{
+  list-style-type: none;
+}
+.list li{
+    margin-bottom: 20px;
+}
+
+.fineprint{
+    font-size: small;
+}
+
+.front{
+  order: 2;
+  background-color: #384fe5;
+    background-image: linear-gradient( to bottom right, rgba(0,0,0,0), red);
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+
+}
+
+.back{
+  order: 1;
+  background-color: #1a37ad;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  padding: 12%;
+}
+
